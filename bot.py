@@ -92,7 +92,7 @@ def main():
     print("🟢 Bot Uniswap PairCreated listener avviato...")
 
     # filtro eventi da adesso in poi
-    pair_filter = factory_contract.events.PairCreated.createFilter(fromBlock='latest')
+    pair_filter = factory_contract.events.PairCreated.create_filter(fromBlock='latest')
 
     while True:
         try:
